@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}PEOTDU - BCS{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="home-container">
+    <section id="section1" class="section home-section">
+        <div class="content-wrapper">
+            <div class="map-container">
+                <img src="{% static 'images/map.png' %}" alt="Map of Baja California Sur" class="map-image">
+            </div>
+            <div class="title-container">
+                <h1>Consulta pública del programa estatal de ordenamiento territorial de desarrollo urbano de Baja California Sur</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="section0" class="section home-section introduction">
+        <div class="content-wrapper">
+            <h2>Programa Estatal de Ordenamiento Territorial y Desarrollo Urbano</h2>
+            <div class="intro-content">
+                <p class="intro-text">El PEOTDU es un instrumento de planeación público, abierto y transparente que busca:</p>
+                <ul class="intro-list">
+                    <li>Integrar infraestructura, productividad, equidad e inclusión social</li>
+                    <li>Proteger el patrimonio natural y cultural del estado</li>
+                    <li>Mejorar la calidad de vida de los habitantes</li>
+                    <li>Impulsar el desarrollo equilibrado y sustentable</li>
+                    <li>Promover el uso racional de los recursos naturales</li>
+                </ul>
+                <p class="intro-text">Este programa se alinea con el Plan Estatal de Desarrollo 2021-2027 y la Estrategia Nacional de Ordenamiento Territorial (ENOT) 2020-2040, contribuyendo a la construcción de un Sistema Estatal de Planeación para el desarrollo sostenible de Baja California Sur.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section3" class="section home-section">
+        <h1>Participa en la consulta, se parte del proceso.</h1> 
+        <div class="content-wrapper">
+            <div class="consultation-item">
+                <img src="{% static 'images/participa.png' %}" alt="Consultation Icon" class="section-image">
+                <a href="#" class="link-button">Participa en la consulta</a>
+            </div>
+            <div class="consultation-item">
+                <h2>Inicio de la consulta del 20 de julio al 3 de agosto</h2>
+                <div class="progress-bar">
+                    <div id="consultation-progress" class="progress"></div>
+                </div>
+                <p id="days-left"></p>
+            </div>
+            <div class="consultation-item">
+                <img src="{% static 'images/calendario.png' %}" alt="Calendar Icon" class="section-image">
+                <a href="{% url 'audiencias' %}" class="link-button">Calendario de audiencias</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section2" class="section home-section">
+    <h1>Conoce mas del PEOTDU - BCS</h1>    
+    <div class="content-wrapper">
+        <div class="item-container">
+            <div class="item" data-type="document">
+                <div class="image-container">
+                    <img src="{% static 'images/documento.png' %}" alt="Document Image" class="section-image">
+                </div>
+                <a href="{% static 'documents/programa_estatal.pdf' %}" class="link-button">Consulta el documento</a>
+            </div>
+            <div class="item" data-type="video">
+                <div class="image-container">
+                    <img src="{% static 'images/video.png' %}" alt="Video Image" class="section-image">
+                </div>
+                <a href="https://www.youtube.com/watch?v=dYtEFRb4lbQ" class="link-button">Conoce mas del PEOTDU</a>
+            </div>
+            <div class="item" data-type="map">
+                <div class="image-container">
+                    <img src="{% static 'images/map.png' %}" alt="Map Image" class="section-image">
+                </div>
+                <a href="{% url 'mapa' %}" class="link-button">Visualiza la cartografia</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="section4" class="section home-section">
+    <h1>Como participar</h1>
+    <div class="participation-steps">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <div class="icon-text-group">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <p>Contesta y envía el formulario con tu observación</p>
+                </div>
+                <p class="or-text">o</p>
+                <div class="icon-text-group">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Asiste a las oficinas de SEPUIM y llena el formulario</p>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <div class="icon-text-group">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Con tu folio consulta en el siguiente link la respuesta a tu observación a partir de las fechas establecidas</p>
+                </div>
+                <a href="#" class="link-button">Consultar respuesta</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% block extra_js %}
+{{ block.super }}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function updateProgress() {
+        var start = new Date('2024-07-20').getTime();
+        var end = new Date('2024-08-03').getTime();
+        var now = new Date().getTime();
+
+        var total = end - start;
+        var elapsed = now - start;
+        var percentage = Math.min(100, Math.max(0, (elapsed / total) * 100));
+
+        var progressBar = document.getElementById('consultation-progress');
+        var daysLeft = document.getElementById('days-left');
+
+        if (progressBar) {
+            progressBar.style.width = percentage + '%';
+        }
+
+        if (daysLeft) {
+            var remainingDays = Math.max(0, Math.ceil((end - now) / (1000 * 60 * 60 * 24)));
+            daysLeft.textContent = 'Quedan ' + remainingDays + ' días restantes';
+        }
+    }
+
+    updateProgress();
+    setInterval(updateProgress, 86400000); // Update daily
+});
+</script>
+{% endblock %}
+
+
+
+
+{% endblock %}
+
+
