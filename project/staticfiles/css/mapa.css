@@ -19,7 +19,7 @@
 
 h1 {
     color: #2C3B53;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     text-align: center;
     margin: 20px 0;
     font-weight: 700;
@@ -48,7 +48,9 @@ h1 i {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 280px;
+    width: 300px;
+    max-height: calc(100% - 20px);
+    overflow-y: auto;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
     padding: 20px;
@@ -180,26 +182,29 @@ h1 i {
 
     #control-panel {
         width: 100%;
-        top: auto;
-        bottom: 0;
-        right: 0;
-        transform: translateY(100%);
-        border-radius: 8px 8px 0 0;
+        max-width: 280px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 80vh;
+        overflow-y: auto;
     }
 
     #control-panel.hidden {
-        transform: translateY(0);
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+        pointer-events: none;
     }
 
     .control-button {
-        top: auto;
-        bottom: 10px;
+        top: 10px;
         right: 10px;
+        bottom: auto;
         border-radius: 5px;
     }
 
     .control-button.active {
-        bottom: 50%;
-        transform: translateY(50%);
+        top: 10px;
+        transform: none;
     }
 }
