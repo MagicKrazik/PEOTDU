@@ -1,0 +1,1987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Proyectos Estratégicos</name>
+	<Schema name="Proyectos" id="S_Proyectos_ISDSS">
+		<SimpleField type="int" name="Id"><displayName>&lt;b&gt;Id&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Proyeccto"><displayName>&lt;b&gt;Proyeccto&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="No_p"><displayName>&lt;b&gt;No_p&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="No_Reg"><displayName>&lt;b&gt;No_Reg&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="long" name="Field"><displayName>&lt;b&gt;Field&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="No_Re"><displayName>&lt;b&gt;No_Re&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Id</b></td><td>$[Proyectos/Id]</td></tr>
+  <tr><td><b>Proyeccto</b></td><td>$[Proyectos/Proyeccto]</td></tr>
+  <tr><td><b>No_p</b></td><td>$[Proyectos/No_p]</td></tr>
+  <tr><td><b>No_Reg</b></td><td>$[Proyectos/No_Reg]</td></tr>
+  <tr><td><b>Field</b></td><td>$[Proyectos/Field]</td></tr>
+  <tr><td><b>No_Re</b></td><td>$[Proyectos/No_Re]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Id</b></td><td>$[Proyectos/Id]</td></tr>
+  <tr><td><b>Proyeccto</b></td><td>$[Proyectos/Proyeccto]</td></tr>
+  <tr><td><b>No_p</b></td><td>$[Proyectos/No_p]</td></tr>
+  <tr><td><b>No_Reg</b></td><td>$[Proyectos/No_Reg]</td></tr>
+  <tr><td><b>Field</b></td><td>$[Proyectos/Field]</td></tr>
+  <tr><td><b>No_Re</b></td><td>$[Proyectos/No_Re]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>Proyectos</name>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de Preservación de especies endémicas</SimpleData>
+					<SimpleData name="No_p">2</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.5828459678524,27.36659909397541,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Supervisión de la superficie de la reserva.</SimpleData>
+					<SimpleData name="No_p">4</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.4448429774452,27.43990270653866,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de preservación de especies endémicas dentro de la Reserva de la Biósfera El Vizcaíno</SimpleData>
+					<SimpleData name="No_p">6</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.8571306942616,27.57133450001174,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de Pago por Servicios Ambientales dentro de la Reserva de la Biósfera El Vizcaíno</SimpleData>
+					<SimpleData name="No_p">7</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.8601803270473,27.71115006651014,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Normas de usos permisibles y ocupación sobre zonas costeras de susceptible a cambios de usos de suelo industriales y turisticos de usos de suelo</SimpleData>
+					<SimpleData name="No_p">8</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-114.2067828117935,27.97371878753098,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Creación de equipamientos educativos y de salud y asistencia social</SimpleData>
+					<SimpleData name="No_p">9</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.4539355562843,27.61849138936607,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa sectorial de mejoramiento agrícola y ganadero sustentable</SimpleData>
+					<SimpleData name="No_p">10</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.3674300011278,27.7301257140704,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regulación de megaproyecto minero</SimpleData>
+					<SimpleData name="No_p">11</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.7357883330723,26.80350861103334,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de Malecón con áreas recreativas y deportivas</SimpleData>
+					<SimpleData name="No_p">12</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-114.2975580563866,27.14090194446801,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Ampliación de Escuela Primaria</SimpleData>
+					<SimpleData name="No_p">13</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-114.3032569528516,27.1549937005566,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Proyecto de fomento de ordenamiento pesquero y acuícola con enfoque sustentable</SimpleData>
+					<SimpleData name="No_p">14</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-114.4335641487592,27.3442160674445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regulación de megaproyecto minero</SimpleData>
+					<SimpleData name="No_p">16</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.3170768961561,27.40901376660188,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de consolidación urbana, a través de la saturación de baldíos y de reciclaje de construcciones antiguas sin valor histórico</SimpleData>
+					<SimpleData name="No_p">17</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.9740817490734,26.89050775323028,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de consolidación urbana, a través de la saturación de baldíos y de reciclaje de construcciones antiguas sin valor histórico</SimpleData>
+					<SimpleData name="No_p">18</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.9818627776458,27.57089333296101,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de reglamento municipal de imagen urbana</SimpleData>
+					<SimpleData name="No_p">19</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.9746050683213,26.9063054658258,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de reglamento municipal de imagen urbana</SimpleData>
+					<SimpleData name="No_p">20</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.9746341769075,27.58106718776239,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de rehabilitación de vialidades y derechos de vía.</SimpleData>
+					<SimpleData name="No_p">22</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.2793005420032,27.35239197514899,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Rehabilitación de Oasis sustentable</SimpleData>
+					<SimpleData name="No_p">23</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.9681299105281,26.87769501814213,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Implementar programas de consolidación urbana</SimpleData>
+					<SimpleData name="No_p">24</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.894947500827,27.28197416647459,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de reglamento municipal de imagen urbana</SimpleData>
+					<SimpleData name="No_p">25</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.8984178686447,27.27540407450572,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Plan de manejo Oasis Sustentable</SimpleData>
+					<SimpleData name="No_p">26</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.893086575584,27.27688364423074,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de un Parque Eólico</SimpleData>
+					<SimpleData name="No_p">28</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.354105856638,26.01386708595403,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">mplementar nuevas áreas verdes aprovechando los espacios subutilizados.</SimpleData>
+					<SimpleData name="No_p">29</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3501550738806,25.9963109812944,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de una nueva presa</SimpleData>
+					<SimpleData name="No_p">30</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.4710178746752,26.01049688061634,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">onstrucción de Escuela de Educación Superior</SimpleData>
+					<SimpleData name="No_p">31</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3741867191806,26.00785248016162,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Centros de canje de residuos por productos básicos para el hogar.</SimpleData>
+					<SimpleData name="No_p">32</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.4274140605244,25.94636644329346,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Instalación en la ciudad de sistemas de alerta temprana</SimpleData>
+					<SimpleData name="No_p">33</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.373452590413,25.97166692836761,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de puente vehicular en el cruce del río en la col. Zaragoza</SimpleData>
+					<SimpleData name="No_p">34</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3552300586788,25.98759363739106,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de un centro cultural</SimpleData>
+					<SimpleData name="No_p">35</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3612022722427,26.03230155474341,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de un mercado público Construcción de un mercado público Construcción de un mercado público Construcción de un mercado público</SimpleData>
+					<SimpleData name="No_p">36</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3441351305803,26.05134250203402,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de un Centro Municipal de Atención y Control Canino</SimpleData>
+					<SimpleData name="No_p">37</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3549852729171,26.02334934132653,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Mejoramiento de la red de agua potable</SimpleData>
+					<SimpleData name="No_p">38</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3682455934704,26.02376158116767,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Renovación el acueducto San Juan Londó-Loreto</SimpleData>
+					<SimpleData name="No_p">39</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.4749458330837,26.22444444455549,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Reglamento de diseño urbano</SimpleData>
+					<SimpleData name="No_p">40</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3798793636615,25.99886574234427,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de 1 terminal sustentable de autobuses</SimpleData>
+					<SimpleData name="No_p">41</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.4004419970313,25.99829100218045,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración del Catálogo de inmuebles que forman parte del patrimonio del municipio</SimpleData>
+					<SimpleData name="No_p">43</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3954745885577,26.01408663499789,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de un nuevo relleno sanitario</SimpleData>
+					<SimpleData name="No_p">44</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.4186492831458,25.97499652405885,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción, de un Hospital General</SimpleData>
+					<SimpleData name="No_p">45</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.3736845674188,25.95519691590679,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción, de un Centro de Salud</SimpleData>
+					<SimpleData name="No_p">46</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.1619369440347,27.1623824997526,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de Museo</SimpleData>
+					<SimpleData name="No_p">52</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.531646421665,25.85928304169949,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de equipamiento educativo</SimpleData>
+					<SimpleData name="No_p">53</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.5209931026372,25.86863930293475,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de jardín vecinal</SimpleData>
+					<SimpleData name="No_p">54</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.5134143280211,25.85648168960589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de preservación de zonas de humedales</SimpleData>
+					<SimpleData name="No_p">55</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.8328072268144,26.04239757880742,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Implementar programas de consolidación urbana</SimpleData>
+					<SimpleData name="No_p">56</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.8289564808036,26.03540207594563,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de un reglamento municipal de imagen urbana</SimpleData>
+					<SimpleData name="No_p">57</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.8276605309732,26.03914230063328,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Promover y preservar las actividades agrícolas a pequeña escala</SimpleData>
+					<SimpleData name="No_p">58</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.072239477206,26.19516889103227,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Restauración de Oasis sustentable en San Miguel-San José</SimpleData>
+					<SimpleData name="No_p">59</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.8426134551479,26.03982933981902,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa permanente de remozamiento de fachadas</SimpleData>
+					<SimpleData name="No_p">60</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.0667498713633,26.18784712044381,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Creación de parques de bolsillo sobre pequeños remanentes en las zonas urbanasCreación de parques de bolsillo sobre pequeños remanentes en las zonas urbanas</SimpleData>
+					<SimpleData name="No_p">61</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.6587993722932,25.03369687630983,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Creación de una clínica hospital de cobertura municipal.</SimpleData>
+					<SimpleData name="No_p">62</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.6533265444178,25.03451306222748,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de regulación de la sobreexplotación de acuíferos en pozos para uso agrícola</SimpleData>
+					<SimpleData name="No_p">63</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.9183309840894,25.49339527342194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Crear un sistema de captación de aguas pluviales</SimpleData>
+					<SimpleData name="No_p">64</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.6663551635387,25.03717286525874,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Reubicación o clausura de tiraderos a cielo</SimpleData>
+					<SimpleData name="No_p">66</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.7745641490111,25.25664327956305,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de Terminal sustentable de autobuses</SimpleData>
+					<SimpleData name="No_p">67</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.7722532901566,25.26513725033043,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Plan de manejo para Sierra La Giganta</SimpleData>
+					<SimpleData name="No_p">68</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.544558276575,25.32270691956695,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regulación de megaproyecto minero</SimpleData>
+					<SimpleData name="No_p">69</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.0950296101054,25.53237538227115,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Rehabilitación del Muelle de Usos Múltiples de Puerto San Carlos</SimpleData>
+					<SimpleData name="No_p">72</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.1152316891444,24.78295732725571,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Remodelación del Puerto Pichilingue Puerto Pichilingue</SimpleData>
+					<SimpleData name="No_p">73</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3336687119177,24.27445644662653,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regeneración Urbana para el Centro Histórico de La Paz</SimpleData>
+					<SimpleData name="No_p">74</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3097828363795,24.12349518616979,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Proyecto de evaluación de afectaciones ambientales</SimpleData>
+					<SimpleData name="No_p">75</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3128345153743,23.81349426377579,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de un relleno sanitario municipal y creación de centros de reciclaje y estaciones de transferencia</SimpleData>
+					<SimpleData name="No_p">79</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3172731044115,24.11402459135102,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regulación de Megaproyecto minero</SimpleData>
+					<SimpleData name="No_p">81</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.7016028138998,24.38357596111039,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de reglamento municipal de imagen urbana</SimpleData>
+					<SimpleData name="No_p">82</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3095135435412,24.10655617374547,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Remodelación de la Imagen del malecón La Paz</SimpleData>
+					<SimpleData name="No_p">83</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3209854956356,24.09341668794072,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Mantenimiento y rehabilitación de la U.H.M, La Paz, B.C. S</SimpleData>
+					<SimpleData name="No_p">84</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3075708499238,24.09020217855184,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de una estación de bomberos</SimpleData>
+					<SimpleData name="No_p">85</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.2338555782723,23.46059872974759,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de una planta de tratamiento</SimpleData>
+					<SimpleData name="No_p">86</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.2300806248436,23.45549111258754,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción Centro de las Artes</SimpleData>
+					<SimpleData name="No_p">87</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.2288142107265,23.44952686035125,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de Parque Ecológico &quot;Oasis Todos Santos&quot;</SimpleData>
+					<SimpleData name="No_p">88</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.2223889719243,23.44315500940542,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Proyecto de evaluación de afectaciones ambientales</SimpleData>
+					<SimpleData name="No_p">81</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.102380863891,23.79680616919514,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de una estación de Bomberos</SimpleData>
+					<SimpleData name="No_p">82</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.9936891671213,24.08166861111752,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Diseño construcción, equipamiento, operación y mantenimiento de un Hospital General</SimpleData>
+					<SimpleData name="No_p">83</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.9964388323987,24.09123430716674,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regulación de Megaproyecto minero</SimpleData>
+					<SimpleData name="No_p">84</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.1076600745214,23.80997768172652,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regulación de Megaproyecto minero</SimpleData>
+					<SimpleData name="No_p">85</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3440781578776,23.92600441698864,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaborar Programa de Desarrollo Turístico Oasis Sustentable</SimpleData>
+					<SimpleData name="No_p">87</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.9740835455549,23.58004363364962,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Restauración de Oasis Sustentable</SimpleData>
+					<SimpleData name="No_p">88</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.933719221053,23.57584365459351,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaborar el Plan parcial de Desarrollo Urbano</SimpleData>
+					<SimpleData name="No_p">89</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.7149283323765,23.48199861134692,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaborar Plan Parcial de Desarrollo Urbano</SimpleData>
+					<SimpleData name="No_p">90</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.7782194442718,23.36681527740318,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de mercados de artesanías</SimpleData>
+					<SimpleData name="No_p">92</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.584032207046,23.59258003792025,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Incrementar la Productividad Agrícola y Pecuaria</SimpleData>
+					<SimpleData name="No_p">93</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.581550827536,23.58601590143609,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de apoyo económico para la instalación de la red de drenaje a las viviendas</SimpleData>
+					<SimpleData name="No_p">94</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.6511809080099,23.56464649226901,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construir, ampliar, habilitar o rehabilitar espacios públicos</SimpleData>
+					<SimpleData name="No_p">95</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.6442409405825,23.55411940183021,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de mercados de venta de productos agrícolas</SimpleData>
+					<SimpleData name="No_p">98</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.5826926152982,23.58098032671277,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Formulación del programa de Desarrollo Turístico para la Subregión Cabo del Este</SimpleData>
+					<SimpleData name="No_p">99</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.7273263679419,23.53527722602013,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de Centros Múltiples</SimpleData>
+					<SimpleData name="No_p">100</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.6502644218514,23.55381220741223,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de una Estación de Bomberos</SimpleData>
+					<SimpleData name="No_p">101</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.7074408970924,23.67381910305475,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de corredor costero Los Frailes-La Ribera</SimpleData>
+					<SimpleData name="No_p">104</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.61573500017,23.48657194453967,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción Terminal de autobuses sustentable</SimpleData>
+					<SimpleData name="No_p">105</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.919941466922,22.92162825227241,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Actualización del Plan de Manejo de Oasis Sustentable</SimpleData>
+					<SimpleData name="No_p">106</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.5190658532166,23.28000502272023,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de fomento al ecoturismo en Cabo Pulmo</SimpleData>
+					<SimpleData name="No_p">107</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.5416716209067,23.27337399753109,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Proyecto de paradas turísticas sobre la costera desde Cabo Pulmo hasta Buenavista</SimpleData>
+					<SimpleData name="No_p">108</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.4266133361881,23.44275863177749,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Regulación de megaproyecto minero</SimpleData>
+					<SimpleData name="No_p">3</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-114.2492803405488,27.29960815804759,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Creación y evaluación del inventario vegetativo</SimpleData>
+					<SimpleData name="No_p">5</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.8212122898143,27.36046912690263,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de señalización informativa y recreativa para visitantes para el turismo de bajo impacto en dunas y manglares</SimpleData>
+					<SimpleData name="No_p">15</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.0192344192098,27.05720635979305,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de un plan de Manejo Oasis Sustentable</SimpleData>
+					<SimpleData name="No_p">21</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.782612928561,26.56102777812962,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de un plan de Manejo Oasis Sustentable</SimpleData>
+					<SimpleData name="No_p">27</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.1998971361352,27.08305548444593,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Creación del Parque Acueducto</SimpleData>
+					<SimpleData name="No_p">42</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.4069936209217,26.05619419547686,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Implementar programas de consolidación urbana,</SimpleData>
+					<SimpleData name="No_p">47</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.5413922010676,25.86961810139416,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de reglamento municipal de imagen urbana</SimpleData>
+					<SimpleData name="No_p">48</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.5261010253117,25.8515168796208,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de canchas deportivas</SimpleData>
+					<SimpleData name="No_p">49</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.533877020685,25.84269646036109,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Acondicionamiento de una Plaza Cívica</SimpleData>
+					<SimpleData name="No_p">50</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.5447145434985,25.85699104755566,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de Centro de Salud</SimpleData>
+					<SimpleData name="No_p">51</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.5222577694995,25.84216530802998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Creación de una red de andadores en las zonas urbanas.</SimpleData>
+					<SimpleData name="No_p">65</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.9156219686021,25.48023844545432,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Restricción de ocupación y/o crecimiento urbano sobre el límite de la zona costera</SimpleData>
+					<SimpleData name="No_p">70</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.080773119788,25.52320075080716,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Reubicación o clausura de tiraderos a cielo abierto</SimpleData>
+					<SimpleData name="No_p">71</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.1575491241531,24.78447047173207,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de señalización informativa y recreativa</SimpleData>
+					<SimpleData name="No_p">76</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3701169447755,24.10504249895256,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Obras de encauzamiento de arroyo para recarga de acuífero para control de arroyo</SimpleData>
+					<SimpleData name="No_p">77</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3701169447755,24.10504249895256,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de presas de gavión para recargar de acuífero en la Subcuenca La Palma</SimpleData>
+					<SimpleData name="No_p">78</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.0172874999181,23.76931527767796,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de un rastro municipal</SimpleData>
+					<SimpleData name="No_p">80</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3718372225098,24.0660800001919,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Implementar</SimpleData>
+					<SimpleData name="No_p">86</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3392332671163,23.94547244920847,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Elaboración de Reglamento municipal de imagen urbana</SimpleData>
+					<SimpleData name="No_p">86</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-110.3275224848144,23.92236094833243,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción del Puente Vehicular en el arroyo Santa Cruz</SimpleData>
+					<SimpleData name="No_p">91</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.6281898438682,23.55763154198723,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de tramo carretero</SimpleData>
+					<SimpleData name="No_p">96</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.6997696692942,23.64838459933519,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Mejoramiento Carretero</SimpleData>
+					<SimpleData name="No_p">97</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.6618826517205,23.56485008729145,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de señalización informativa para el turismo de bajo impacto en dunas y manglares</SimpleData>
+					<SimpleData name="No_p">102</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.9159907231569,22.87946005922029,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Construcción de Planta DesaladorConstrucción de Planta Desaladora</SimpleData>
+					<SimpleData name="No_p">103</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.9257982770265,22.89171481484472,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Programa de señalización informativa y recreativa para visitantes para el turismo de bajo impacto en dunas y manglares</SimpleData>
+					<SimpleData name="No_p">1</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-113.0157038885244,27.64044194473998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Eje Interurbano San José del Cabo-Cabo San Lucas</SimpleData>
+					<SimpleData name="No_p">109</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.8414644433779,22.95464917049993,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Plan Parcial de Desarrollo Urbano del Centro Urbano y Centro Histórico de San José del Cabo</SimpleData>
+					<SimpleData name="No_p">110</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.8056555148177,22.96972387678331,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Proyectos_ISDSS">
+					<SimpleData name="Id">0</SimpleData>
+					<SimpleData name="Proyeccto">Actualización del Plan de Manejo de Oasis Sustentable. Estero de San José</SimpleData>
+					<SimpleData name="No_p">111</SimpleData>
+					<SimpleData name="No_Reg"></SimpleData>
+					<SimpleData name="Field">0</SimpleData>
+					<SimpleData name="No_Re"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-109.7980447864078,22.96239674931991,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
