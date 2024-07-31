@@ -1,3 +1,18 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
 
 /* Navbar styles */
 .navbar {
@@ -19,9 +34,17 @@
     align-items: center;
 }
 
-.logo {
-    height: 50px; /* Increased logo size */
+.logo-box {
+    background-color: #f0f0f0;
+    padding: 5px;
     margin-right: 1rem;
+    border-radius: 4px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .navbar-right {
@@ -56,6 +79,26 @@
     color: #FFFFFF;
 }
 
+/* Menu toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    background-color: #FFFFFF;
+}
 
 /* Footer styles */
 footer {
@@ -73,33 +116,55 @@ footer {
 /* Responsive design */
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
+        flex-wrap: wrap;
     }
 
-    .navbar-left, .navbar-right {
+    .navbar-left {
+        order: 1;
         width: 100%;
-    }
-
-    .logo-container {
         justify-content: center;
         margin-bottom: 1rem;
     }
 
+    .menu-toggle {
+        display: flex;
+        order: 2;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    .navbar-right {
+        order: 3;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-right.active {
+        display: flex;
+    }
+
     .nav-links {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
     }
 
     .nav-links li {
-        margin-left: 0;
-        margin-bottom: 0.5rem;
+        margin: 0.5rem 0;
     }
 
     .nav-links a {
         display: block;
         padding: 0.5rem;
         text-align: center;
+    }
+
+    .logo-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-box {
+        margin: 0.5rem;
     }
 }

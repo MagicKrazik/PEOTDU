@@ -18,7 +18,7 @@
                 <img src="{% static 'images/map.png' %}" alt="Map of Baja California Sur" class="map-image">
             </div>
             <div class="title-container">
-                <h1>Consulta pública del programa estatal de ordenamiento territorial de desarrollo urbano (PEOTDU) Baja California Sur</h1>
+                <h1>Consulta pública del Programa Estatal de Ordenamiento Territorial de Desarrollo Urbano (PEOTDU) Baja California Sur</h1>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
                 <a href="#" class="link-button">Participa en la consulta</a>
             </div>
             <div class="consultation-item">
-                <h2>Inicio de la consulta del 20 de julio al 3 de agosto</h2>
+                <h2>Inicio de la consulta del 01 de Julio al 28 de Octubre</h2>
                 <div class="progress-bar">
                     <div id="consultation-progress" class="progress"></div>
                 </div>
@@ -129,8 +129,8 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     function updateProgress() {
-        var start = new Date('2024-07-20').getTime();
-        var end = new Date('2024-08-03').getTime();
+        var start = new Date('2024-07-01').getTime();
+        var end = new Date('2024-10-28').getTime();
         var now = new Date().getTime();
 
         var total = end - start;

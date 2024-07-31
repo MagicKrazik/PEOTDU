@@ -1,4 +1,141 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}PEOTDU - BCS{% endblock %}
+{% block title %}Mapa - PEOTDU BCS{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<link rel="stylesheet" href="{% static 'css/mapa.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="map-container">
+    <div id="map-container">
+        <div id="map"></div>
+        <button id="toggle-panel" onclick="togglePanel()">Toggle Panel</button>
+        <div id="kmz-layer-control">
+            <h4>Capas KMZ Activas</h4>
+            <div id="kmz-layer-list"></div>
+        </div>
+    </div>
+
+    <div id="kmz-panel">
+        <h3>Capas KMZ</h3>
+        <div id="kmz-list"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+<script src="https://unpkg.com/leaflet-kml@1.0.1/leaflet-kml.js"></script>
+<script>
+    var map = L.map('map').setView([24.1426, -110.3127], 8);
+
+    var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    }).addTo(map);
+
+    var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    });
+
+    var baseMaps = {
+        "Satellite": satellite,
+        "OpenStreetMap": osm
+    };
+
+    L.control.layers(baseMaps).addTo(map);
+
+    var kmzLayers = [
+        { name: 'Capa 1', url: "{% static 'kmz/capa1.kmz' %}", color: '#FF0000' },
+        // Add more KMZ layers here as needed
+    ];
+
+    var activeLayers = {};
+
+    function addKmzLayer(kmz) {
+        fetch(kmz.url)
+            .then(response => response.arrayBuffer())
+            .then(data => {
+                return JSZip.loadAsync(data);
+            })
+            .then(zip => {
+                var kmlFile = Object.keys(zip.files).find(filename => filename.toLowerCase().endsWith('.kml'));
+                if (!kmlFile) {
+                    throw new Error('No KML file found in KMZ');
+                }
+                return zip.file(kmlFile).async("text");
+            })
+            .then(kmlContent => {
+                var parser = new DOMParser();
+                var kml = parser.parseFromString(kmlContent, 'text/xml');
+                var layer = new L.KML(kml);
+                layer.addTo(map);
+                activeLayers[kmz.name] = layer;
+                map.fitBounds(layer.getBounds());
+                updateKmzLayerControl();
+            })
+            .catch(error => console.error('Error loading KMZ:', error));
+    }
+
+    function removeKmzLayer(kmzName) {
+        if (activeLayers[kmzName]) {
+            map.removeLayer(activeLayers[kmzName]);
+            delete activeLayers[kmzName];
+            updateKmzLayerControl();
+        }
+    }
+
+    function updateKmzLayerControl() {
+        var kmzLayerList = document.getElementById('kmz-layer-list');
+        kmzLayerList.innerHTML = '';
+        Object.keys(activeLayers).forEach(function(layerName) {
+            var layerItem = document.createElement('div');
+            layerItem.className = 'kmz-layer-item';
+            layerItem.textContent = layerName;
+            kmzLayerList.appendChild(layerItem);
+        });
+    }
+
+    kmzLayers.forEach(function(kmz) {
+        var kmzItem = document.createElement('div');
+        kmzItem.className = 'kmz-item';
+        var checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = 'kmz-' + kmz.name;
+        checkbox.checked = true;
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                addKmzLayer(kmz);
+            } else {
+                removeKmzLayer(kmz.name);
+            }
+        });
+        var label = document.createElement('label');
+        label.htmlFor = 'kmz-' + kmz.name;
+        label.textContent = kmz.name;
+        var colorPicker = document.createElement('input');
+        colorPicker.type = 'color';
+        colorPicker.value = kmz.color;
+        colorPicker.addEventListener('change', function() {
+            kmz.color = this.value;
+            if (activeLayers[kmz.name]) {
+                removeKmzLayer(kmz.name);
+                addKmzLayer(kmz);
+            }
+        });
+        kmzItem.appendChild(checkbox);
+        kmzItem.appendChild(label);
+        kmzItem.appendChild(colorPicker);
+        document.getElementById('kmz-list').appendChild(kmzItem);
+        addKmzLayer(kmz);
+    });
+
+    function togglePanel() {
+        var panel = document.getElementById('kmz-panel');
+        panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+{% endblock %}

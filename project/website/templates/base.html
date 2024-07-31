@@ -17,29 +17,21 @@
         <div class="navbar-left">
             <div class="logo-container">
                 <div class="logo-box">
-                    <a href="{% url 'home' %}">
-                        <img src="{% static 'images/logo1.png' %}" alt="Logo 1" class="logo">
-                    </a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo1.png' %}" alt="Logo 1" class="logo"></a>
                 </div>
                 <div class="logo-box">
-                    <a href="{% url 'home' %}">
-                        <img src="{% static 'images/logo2.jpeg' %}" alt="Logo 2" class="logo">
-                    </a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo2.jpeg' %}" alt="Logo 2" class="logo"></a>
                 </div>
                 <div class="logo-box">
-                    <a href="{% url 'home' %}">
-                        <img src="{% static 'images/logo3.png' %}" alt="Logo 3" class="logo">
-                    </a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo3.png' %}" alt="Logo 3" class="logo"></a>
                 </div>
             </div>
         </div>
-    
-        <div class="menu-toggle" id="mobile-menu">
+        <div id="mobile-menu" class="menu-toggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-    
         <div class="navbar-right">
             <ul class="nav-links">
                 <li><a href="{% url 'home' %}">Inicio</a></li>
@@ -49,16 +41,16 @@
         </div>
     </nav>
 
-    <main>
-        {% block content%} 
-
-        {% endblock%}
+    <main role="main">
+        {% block content %}
+        {% endblock %}
+        {% block extra_js %}
+        {% endblock %}
     </main>
-
 
     <footer>
         <div class="footer-content">
-            <b>"POR EL DERECHO A LA CIUDAD"</b>
+            <p><strong>"POR EL DERECHO A LA CIUDAD"</strong></p>
             <p>Baja California Sur</p>
         </div>
     </footer>
