@@ -4,11 +4,13 @@
 {% block title %}PEOTDU - BCS - Audiencias{% endblock %}
 
 {% block content %}
-<div class="image-container">
-    <img src="{% static 'images/Audiencias.png' %}">
+<div class="audiencias-container">
+    <div class="image-container">
+        <img src="{% static 'images/Audiencias.png' %}" alt="Audiencias" class="audiencias-image">
+    </div>
 </div>
 {% endblock %}
 
 {% block extra_css %}
-
+<link rel="stylesheet" href="{% static 'css/audiencias.css' %}">
 {% endblock %}
