@@ -12,12 +12,12 @@ def get_kml_files():
     kml_dir = os.path.join(settings.STATICFILES_DIRS[0], 'kml')
     kml_files = [f for f in os.listdir(kml_dir) if f.endswith('.kml')]
     
-    # Add labels for KML files
+    # Add labels and preselection for KML files
     kml_data = [
         {
             'filename': f,
             'label': f.replace('.kml', '').replace('_', ' ').title(),
-            'preselected': f == 'Mapa_Base.kml'
+            'preselected': f == 'Mapa_Base.kml'  # Preselect the base map
         } for f in kml_files
     ]
     return kml_data
