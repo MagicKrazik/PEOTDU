@@ -8,7 +8,7 @@
 .map-container {
     max-width: 100%;
     margin: 0;
-    padding: 10px 0; /* Reduced padding */
+    padding: 10px 20px;
     background-color: var(--background-color);
     position: relative;
     overflow: hidden;
@@ -19,19 +19,19 @@
 
 .map-container h1 {
     color: var(--primary-color);
-    font-size: 2rem; /* Reduced font size */
+    font-size: 2rem;
     line-height: 1.2;
     font-weight: 700;
     text-align: center;
-    padding: 10px 5px; /* Reduced padding */
-    margin: 0; /* Remove any margin */
+    padding: 10px 5px;
+    margin: 0;
 }
 
 .gradient-line, .gradient-line-bottom {
     position: absolute;
     left: 0;
     right: 0;
-    height: 3px; /* Reduced height */
+    height: 3px;
     background: linear-gradient(to right, #34749C, var(--secondary-color));
 }
 
@@ -45,68 +45,105 @@
 
 #map {
     flex-grow: 1;
-    width: 100%;
-    min-height: 70vh; /* Increased minimum height */
-    border-radius: 10px 10px 0 0;
+    width: calc(100% - 40px);
+    min-height: 70vh;
+    margin: 0 auto;
+    border-radius: 10px;
     box-shadow: 0 10px 30px var(--shadow-color);
 }
 
 #kml-layer-control {
     background-color: white;
-    border-radius: 0 0 10px 10px;
-    padding: 10px; /* Reduced padding */
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Added bottom margin */
     box-shadow: 0 4px 6px var(--shadow-color);
+    max-height: calc(30vh - 40px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 #kml-layer-control h4 {
     color: var(--primary-color);
-    font-size: 1.2rem; /* Reduced font size */
-    margin-bottom: 10px; /* Reduced margin */
-    padding-bottom: 5px; /* Reduced padding */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 2px solid var(--secondary-color);
 }
 
 #kml-layer-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Reduced gap */
-    max-height: 150px; /* Reduced max height */
+    gap: 5px;
     overflow-y: auto;
     padding-right: 10px;
+    padding-bottom: 30px; /* Added bottom padding */
+    flex-grow: 1;
 }
 
 .kml-layer-item {
     display: flex;
     align-items: center;
-    font-size: 0.9rem; /* Reduced font size */
+    font-size: 0.8rem;
     color: #333;
-    flex-basis: calc(33.333% - 10px);
+    flex-basis: calc(25% - 5px);
+    padding: 3px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
 }
 
 .color-indicator {
-    width: 15px; /* Reduced size */
-    height: 15px; /* Reduced size */
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    margin-right: 5px; /* Reduced margin */
+    margin-right: 5px;
     display: inline-block;
+    flex-shrink: 0;
 }
 
-/* Custom scrollbar styles remain unchanged */
+/* Custom scrollbar styles */
+#kml-layer-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#kml-layer-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#kml-layer-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+#kml-layer-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 .leaflet-control-layers {
     background-color: white;
-    padding: 8px; /* Reduced padding */
+    padding: 8px;
     border-radius: 5px;
     box-shadow: 0 2px 5px var(--shadow-color);
 }
 
 @media screen and (max-width: 1200px) {
     .kml-layer-item {
-        flex-basis: calc(50% - 10px);
+        flex-basis: calc(33.333% - 5px);
     }
 }
 
 @media screen and (max-width: 768px) {
+    .map-container {
+        padding: 10px;
+    }
+
+    #map {
+        width: calc(100% - 20px);
+    }
+
     .map-container h1 {
         font-size: 1.8rem;
         padding: 10px 5px;
@@ -116,12 +153,8 @@
         font-size: 1.1rem;
     }
 
-    #map {
-        min-height: 60vh; /* Adjusted for smaller screens */
-    }
-
     .kml-layer-item {
-        flex-basis: 100%;
+        flex-basis: calc(50% - 5px);
     }
 }
 
@@ -135,6 +168,7 @@
     }
 
     .kml-layer-item {
-        font-size: 0.8rem;
+        flex-basis: 100%;
+        font-size: 0.7rem;
     }
 }
