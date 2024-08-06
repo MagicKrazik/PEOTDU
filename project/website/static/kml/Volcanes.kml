@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Volcanes</name>
+	<Schema name="Volcanes" id="S_Volcanes_SSIDSSI">
+		<SimpleField type="long" name="OID_"><displayName>&lt;b&gt;OID_&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Name"><displayName>&lt;b&gt;Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="FolderPath"><displayName>&lt;b&gt;FolderPath&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="long" name="SymbolID"><displayName>&lt;b&gt;SymbolID&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="AltMode"><displayName>&lt;b&gt;AltMode&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Base"><displayName>&lt;b&gt;Base&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Snippet"><displayName>&lt;b&gt;Snippet&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="PopupInfo"><displayName>&lt;b&gt;PopupInfo&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="HasLabel"><displayName>&lt;b&gt;HasLabel&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="long" name="LabelID"><displayName>&lt;b&gt;LabelID&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<color>ff0000aa</color>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/volcano.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>OID_</b></td><td>$[Volcanes/OID_]</td></tr>
+  <tr><td><b>Name</b></td><td>$[Volcanes/Name]</td></tr>
+  <tr><td><b>FolderPath</b></td><td>$[Volcanes/FolderPath]</td></tr>
+  <tr><td><b>SymbolID</b></td><td>$[Volcanes/SymbolID]</td></tr>
+  <tr><td><b>AltMode</b></td><td>$[Volcanes/AltMode]</td></tr>
+  <tr><td><b>Base</b></td><td>$[Volcanes/Base]</td></tr>
+  <tr><td><b>Snippet</b></td><td>$[Volcanes/Snippet]</td></tr>
+  <tr><td><b>PopupInfo</b></td><td>$[Volcanes/PopupInfo]</td></tr>
+  <tr><td><b>HasLabel</b></td><td>$[Volcanes/HasLabel]</td></tr>
+  <tr><td><b>LabelID</b></td><td>$[Volcanes/LabelID]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<color>ff0000aa</color>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/volcano.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>OID_</b></td><td>$[Volcanes/OID_]</td></tr>
+  <tr><td><b>Name</b></td><td>$[Volcanes/Name]</td></tr>
+  <tr><td><b>FolderPath</b></td><td>$[Volcanes/FolderPath]</td></tr>
+  <tr><td><b>SymbolID</b></td><td>$[Volcanes/SymbolID]</td></tr>
+  <tr><td><b>AltMode</b></td><td>$[Volcanes/AltMode]</td></tr>
+  <tr><td><b>Base</b></td><td>$[Volcanes/Base]</td></tr>
+  <tr><td><b>Snippet</b></td><td>$[Volcanes/Snippet]</td></tr>
+  <tr><td><b>PopupInfo</b></td><td>$[Volcanes/PopupInfo]</td></tr>
+  <tr><td><b>HasLabel</b></td><td>$[Volcanes/HasLabel]</td></tr>
+  <tr><td><b>LabelID</b></td><td>$[Volcanes/LabelID]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>Volcanes</name>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Volcanes_SSIDSSI">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Tres Virgenes</SimpleData>
+					<SimpleData name="FolderPath">Riesgos/volcanes_activos/Layers/Volcanes/Zonificación/Volcanes activos</SimpleData>
+					<SimpleData name="SymbolID">10</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"> <head> <META http-equiv="Content-Type" content="text/html"> <meta http-equiv="content-type" content="text/html; charset=UTF-8"> </head> <body style="margin:0]]></SimpleData>
+					<SimpleData name="HasLabel">0</SimpleData>
+					<SimpleData name="LabelID">-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.59,27.47000000000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Volcanes_SSIDSSI">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">El Aguajito</SimpleData>
+					<SimpleData name="FolderPath">Riesgos/volcanes_activos/Layers/Volcanes/Zonificación/Volcanes activos</SimpleData>
+					<SimpleData name="SymbolID">15</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"> <head> <META http-equiv="Content-Type" content="text/html"> <meta http-equiv="content-type" content="text/html; charset=UTF-8"> </head> <body style="margin:0]]></SimpleData>
+					<SimpleData name="HasLabel">0</SimpleData>
+					<SimpleData name="LabelID">-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.536372,27.56291300000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Volcanes_SSIDSSI">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">La Reforma</SimpleData>
+					<SimpleData name="FolderPath">Riesgos/volcanes_activos/Layers/Volcanes/Zonificación/Volcanes activos</SimpleData>
+					<SimpleData name="SymbolID">15</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"> <head> <META http-equiv="Content-Type" content="text/html"> <meta http-equiv="content-type" content="text/html; charset=UTF-8"> </head> <body style="margin:0]]></SimpleData>
+					<SimpleData name="HasLabel">0</SimpleData>
+					<SimpleData name="LabelID">-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-112.3911619999999,27.50510300000006,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Volcanes_SSIDSSI">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Isla Tortuga</SimpleData>
+					<SimpleData name="FolderPath">Riesgos/volcanes_activos/Layers/Volcanes/Zonificación/Volcanes activos</SimpleData>
+					<SimpleData name="SymbolID">11</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"> <head> <META http-equiv="Content-Type" content="text/html"> <meta http-equiv="content-type" content="text/html; charset=UTF-8"> </head> <body style="margin:0]]></SimpleData>
+					<SimpleData name="HasLabel">0</SimpleData>
+					<SimpleData name="LabelID">-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.885363,27.44428200000005,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Volcanes_SSIDSSI">
+					<SimpleData name="OID_">0</SimpleData>
+					<SimpleData name="Name">Comondu - La Purisima</SimpleData>
+					<SimpleData name="FolderPath">Riesgos/volcanes_activos/Layers/Volcanes/Zonificación/Volcanes activos</SimpleData>
+					<SimpleData name="SymbolID">13</SimpleData>
+					<SimpleData name="AltMode">-1</SimpleData>
+					<SimpleData name="Base">0</SimpleData>
+					<SimpleData name="Snippet"></SimpleData>
+					<SimpleData name="PopupInfo"><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"> <head> <META http-equiv="Content-Type" content="text/html"> <meta http-equiv="content-type" content="text/html; charset=UTF-8"> </head> <body style="margin:0]]></SimpleData>
+					<SimpleData name="HasLabel">0</SimpleData>
+					<SimpleData name="LabelID">-1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-111.92,26.00000000000007,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

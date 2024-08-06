@@ -51,12 +51,12 @@
 }
 
 #section1 .map-left-container {
-    flex: 0 0 40%;
+    flex: 0 0 35%;
     overflow: hidden;
 }
 
 #section1 .map-right-container {
-    flex: 0 0 60%;
+    flex: 0 0 65%;
     overflow: hidden;
 }
 
@@ -68,6 +68,7 @@
     object-position: center;
     padding: 8px;
 }
+
 
 @media screen and (max-width: 768px) {
     #section1 .content-wrapper {

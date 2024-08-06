@@ -17,7 +17,7 @@ def get_kml_files():
         {
             'filename': f,
             'label': f.replace('.kml', '').replace('_', ' ').title(),
-            'preselected': f == 'Mapa_Base.kml'  # Preselect the base map
+            #'preselected': f == 'Mapa_Base.kml'  # Preselect the base map
         } for f in kml_files
     ]
     return kml_data
